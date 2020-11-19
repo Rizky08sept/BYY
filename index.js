@@ -638,7 +638,7 @@ conn.sendMessage(id, 'kirim #gacha cewek/cowok\n\nContoh: #gacha cewek' ,Message
    }
 
 
-   if (text.includes("#quotes"))
+   if (text.includes("!quotes"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
@@ -651,6 +651,8 @@ conn.sendMessage(id, 'kirim #gacha cewek/cowok\n\nContoh: #gacha cewek' ,Message
             conn.sendMessage(
                id,
                `
+      Quotes untuk 
+*${id.split("@s.whatsapp.net")[0]}*
      _${kata}_
         
     
@@ -659,8 +661,7 @@ conn.sendMessage(id, 'kirim #gacha cewek/cowok\n\nContoh: #gacha cewek' ,Message
             );
 
          });
-   }*/
-
+   }
    if (text.includes("#gacha cewek"))
    {
     var items = ["ullzang girl", "cewe cantik", "hijab cantik", "korean girl"];
